@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #1A3A5A;
+  --color-accent: #FFD700;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-[#f8f6f6] text-slate-900;
+  }
+}

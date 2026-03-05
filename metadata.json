@@ -1,0 +1,5 @@
+{
+  "name": "Florería Bautista - Panel Administrativo",
+  "description": "Sistema de gestión interna para Florería Bautista, incluyendo dashboard de ventas, inventario y administración de base de datos.",
+  "requestFramePermissions": []
+}
