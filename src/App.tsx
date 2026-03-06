@@ -365,7 +365,7 @@ const DatabaseAdminView = ({ backups, loading, onCreateBackup, onDeleteBackup }:
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-2">
             <p className="text-slate-500 text-sm font-medium">Tamaño de BD</p>
-            <p className="text-primary text-3xl font-bold">120 MB</p>
+            <p className="text-primary text-3xl font-bold">20 MB</p>
             <div className="flex items-center gap-1 text-emerald-600 text-sm font-bold">
               <TrendingUp size={14} /> +2.4% este mes
             </div>

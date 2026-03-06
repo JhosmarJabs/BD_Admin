@@ -47,8 +47,8 @@ if (salesCount.count === 0) {
   orders.forEach(o => insertOrder.run(...o));
 
   const backups = [
-    ['20 Oct 2023', '03:00 AM', '118.5 MB', 'Sistema (Auto)'],
-    ['19 Oct 2023', '11:20 PM', '117.2 MB', 'Admin_Bautista'],
+    ['02 Mar 2026', '03:00 AM', '18.5 MB', 'Sistema (Auto)'],
+    ['01 Mar 2026', '11:20 PM', '17.2 MB', 'Admin_Bautista'],
   ];
   const insertBackup = db.prepare("INSERT INTO backups (date, time, size, user) VALUES (?, ?, ?, ?)");
   backups.forEach(b => insertBackup.run(...b));
@@ -70,7 +70,7 @@ async function startServer() {
       salesToday: todaySales.total || 4250.00,
       pendingOrders: pendingOrders.count,
       newClients,
-      dbSize: "120 MB",
+      dbSize: "20 MB",
       totalRecords: 84293
     });
   });
@@ -91,7 +91,7 @@ async function startServer() {
     const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
     
     const stmt = db.prepare("INSERT INTO backups (date, time, size, user) VALUES (?, ?, ?, ?)");
-    stmt.run(dateStr, timeStr, "119.2 MB", "Admin_Bautista");
+    stmt.run(dateStr, timeStr, "19.2 MB", "Admin_Bautista");
     
     res.json({ success: true });
   });
